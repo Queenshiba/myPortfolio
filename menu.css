@@ -10,25 +10,23 @@
     box-sizing: border-box;
   }
 
-.menu ul {
+.menu {
     display: flex;
     flex-direction: column; 
 }
 .menu a {
     padding: 15px 0;
-    color: white;
-}
-.menu ul a {
     position: relative;
-    color:lightgray;
+    color :white;
     text-decoration: none;
-  }
+}
+
   
-  .menu ul a:hover {
-    color: white;
+  .menu a:hover {
+    color: gray;
   }
 
-  .menu ul a:before {
+  .menu a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -42,14 +40,19 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-  .menu ul a:hover:before {
+  .menu  a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-.menu ul div {
+.menu  div {
     padding-top: 40px;
 }
+.menu > div >div {
+    display: flex;
+    flex-direction: column;
+}
+
 .lang-options a {
     padding: 10px 15px;
 }
@@ -85,7 +88,7 @@
     width: 70px;
     height: 70px;
     padding: 1rem;
-    background: none;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +190,7 @@
     transition: opacity 0.4s ease;
   }
   
-  .menu-wrap .menu > div > div > ul > li {
+  .menu-wrap .menu > div > div > a {
     list-style-type: none;
     color: #fff;
     font-size: 1.5rem;
@@ -202,6 +205,5 @@
   
   @media only screen and (min-width: 800px)  {
     .menu-wrap {display: none;}
- 
 
 }

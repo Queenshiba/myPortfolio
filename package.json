@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Queenshiba/myPortfolio/issues"
   },
-  "homepage": "https://Queenshiba.github.io/QShiba",
+  "homepage": "https://github.com/Queenshiba/myPortfolio.git",
   "dependencies": {
     "gh-pages": "^2.1.0"
   }

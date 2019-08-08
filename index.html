@@ -8,126 +8,111 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="stylesheet" type="text/css" href="menu.css">
-    <title>Portfolio</title>
+    <title>MyPortfolio</title>
 </head>
 
 <body>
-        <div class="menu-wrap">
-                <input type="checkbox" class="toggler">
-                <div class="hamburger"><div></div></div>
-                <div class="menu">
-                  <div>
-                    <div>
-                      <ul>
-                           <a href="#sectionabout">About</a>
-                            <a href="#sectionproject">Projects</a>
-                            <a href="#title-contact">Contact</a>
-                        <div class="sns-icons">
-                            <a href="#"><img id="github" href="#" src="github icon.svg"></a>
-                            <a href="#"><img id="insta" src="insta icon gray.png"></a>
-                            <a href="#"><img id="twitter" src="twitter icon gray.png"></a>
-                        </div>
-                        <div class="lang-options">
-                            <a href="#">Eng.</a>
-                            <a href="#">Jpn.</a>
-                        </div>
-                        </ul>
-                    </div>
-                  </div>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div>
+
                 </div>
-              </div>
-    <div id="top">
+            </div>
+                    <div class="menu">
+                        <div>
+                            <div>                    
+                                <a href="#about">About</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#contact">Contact</a>
+                                    <div class="sns-icons">
+                                       <a href="https://github.com/Queenshiba"><img src="github icon.svg"></a>
+                                       <a href="#"><img src="insta icon gray.png"></a>
+                                        <a href="#"><img src="twitter icon gray.png"></a>
+                                    </div>
+                                    <div class="lang-options">
+                                        <a href="#">Eng.</a>
+                                        <a href="#">Jpn.</a>
+                                    </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+    </div>
 
-        <div id="header">
+<!--laptop menu--> 
 
-            <li id="English"><a href="#">Eng.</a></li>
-            <li id="Japanese"><a href="#">Jpn.</a></li>
+        <div class="lang-container">
+            <a href="#">Eng.</a>
+            <a href="#">Jpn.</a>
         </div>
-        <div id="main">
-            <div id="nav-div">
-                <nav>
-                    <ul id="nav">
-                        <li id="About"><a href="#sectionabout">About</a></li>
-                        <li id="Work"><a href="#sectionproject">Work</a></li>
-                        <li id="Contact"><a href="#title-contact">Contact</a></li>
-                    </ul>
-                    <div id="sns">
-                    <a href="#"><img id="github" src="github icon.svg"></a>
-                    <a href="#"><img id="insta" src="insta icon gray.png"></a>
-                    <a href="#"><img id="twitter" src="twitter icon gray.png"></a>
-                    </div>
-                </nav>
-            </div>
 
+    <div class="landingPage">    
+        <div class="menu-container">
+                <a href="#about">About</a>
+                <a href="#projects">Work</a>
+                <a href="#contect">Contact</a>
+                <a href="https://github.com/Queenshiba"><img src="github icon.svg" alt="github icon"></a>
+                <a href="#"><img src="insta icon gray.png" alt="instagram icon"></a>
+                <a href="#"><img src="twitter icon gray.png" alt="twitter icon"></a>        
 
-            <div id="img-container">
-                <img id="blueshiba" src="blueshiba.png">
-            </div>
+        </div>            
             
-    </div>
-    </div>
-    <div id="sectionabout">
-            <div id="title-about">
-                <a>-----About</a>
-            </div>
-        <div id="headshottext">   
-            <div id="headshot">
-                    <div class="image-cropper">
-                    <img id="headshot" src="Haruka with birds.jpg">
-                    </div>
-            </div>
-            <div id="hellocomment">
-                <div id="hello">
-                    <a>Hello World!</a>
-                </div>
-                 <div id="comment">
-                    <a>I'm Haruka Shibata,</a>
-                    <a>a web developer.</a>
-                    <a>I like making a nice thing.</a>
-                </div>
-        </div> 
-            </div>
+        <img class="blueshiba" src="blueshiba.png">
+    </div> 
+           
 
-    </div>
-    <div id="sectionproject">
-            <div id="title-projects">
-                <a>-----Projects</a>
-            </div>
-            <div id="projectsimg">
-                <img src="portfolioimage.jpg">
-                <img src="sample1.jpg">
-                <img src="sample2.jpg">
-            </div>
-    </div>
-    
-    <div id="section">
-            <div id="title-contact">
-                <a>-----Contact</a>
-    </div>
+ <!--about-->
+       
+        <h1 id="about">-----About</h1>
+            <div class="about-container">  
+                    <img class="headshot" src="Haruka with birds circle.png">      
+           
+                 <div class="about-comment">   
+                    <p id="hello">Hello World!</p>
+              
+                    <p>I'm Haruka Shibata,</p>
+                    <p>a web developer.</p>
+                    <p>I like making a nice thing.</p>
+                </div>
+            </div>    
 
-    <div class="container">
+ <!--projects-->
+
+        <h2 id="projects">-----Projects</h2>
+       
+        <div class="projects-img">
+            <img src="portfolioimage.jpg">
+            <img src="sample1.jpg">
+            <img src="sample2.jpg">
+        </div>
+       
+<!--contact-->
+        <h3 id="contact">-----Contact</h3>
+
+        <div class="container">
             <form action="action_page.php">
-          
-              <label for="fname"></label>
-              <input type="text" id="fname" name="firstname" placeholder="Name">
+
+                <label for="fname"></label>
+                <input type="text" id="fname" name="firstname" placeholder="Name">
 
 
-              <label for="lname"></label>
-              <input type="text" id="lname" name="lastname" placeholder="Subject">
-          
-              <label for="subject"></label>
-              <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-          
-              <input id="sendbotton" type="submit" value="SENT">
-          
+                <label for="lname"></label>
+                <input type="text" id="lname" name="lastname" placeholder="Subject">
+
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+                <input id="sendbotton" type="submit" value="SENT">
+
             </form>
-          </div>
+        </div>
+
     
-    </div>
+  
     <footer>
-       <p>© 2019 Haruka Shibata All Rights Reserved</p>
+        <p>© 2019 Haruka Shibata All Rights Reserved</p>
     </footer>
-        <script src="main.js"></script>
 </body>
 
 </html>
