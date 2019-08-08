@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d portfolio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Queenshiba/myPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Queenshiba/myPortfolio/issues"
+  },
+  "homepage": "https://Queenshiba.github.io/QShiba",
+  "dependencies": {
+    "gh-pages": "^2.1.0"
+  }
+}
