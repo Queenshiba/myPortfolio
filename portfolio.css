@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0 20px 0 20px;
+    font-family: 'Lora', serif;
+    color: black;
+    
+}
+
+li{
+    list-style: none;
+    
+    }
+ul a, li a:hover {
+        color: gray;
+      }
+a, p {
+    color: black;
+}
+
+ul a, li a {
+    font-size: 1.2em;
+    }
+
+#title-about, #title-projects, #title-contact {
+    font-size: 1.8em;
+}
+
+
+@media only screen and (max-width: 800px)  {
+    #nav-div, li {display: none;}
+ 
+
+}
+@media only screen and (min-width: 800px)  {
+        #menu, #mobile-nav {display: none;}
+   
+            
+}
+
+
+#header {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60px;
+    
+}
+
+#header li {
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 800px)  {
+#sns {
+   padding-left: 20px; 
+    padding-top: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+#github  {
+    height: 40px;
+    width: auto;
+    padding-bottom: 20px;
+}
+#insta {
+    height: 40px;
+    width: auto;
+    padding-bottom: 20px;
+}
+#twitter{
+    height: 40px;
+    width: auto;
+    padding-bottom: 20px;
+}
+}
+
+#blueshiba {
+    max-width: 100%;
+    max-height: 600px;
+    position: relative;
+    padding-right: 30px;
+    padding-top: 60px;
+    
+}
+#img-container {
+    margin: auto;
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    
+}
+#main {
+    display: flex;
+    flex-direction: row;
+}
+#nav {
+    padding-right: 10px;
+}
+#nav li {
+    padding:10px 0px 10px 0px;
+    
+}
+li a {
+    vertical-align:center;
+}
+#nav-div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#headshot {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;   
+    
+  }
+
+  #headshot img {
+    display: inline-block;
+    position: relative;
+    width: 380px;
+    height: auto;
+    margin-left: 0;
+    margin-top: -25%;
+    
+    
+  }
+  .image-cropper {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+
+#title-about {
+    padding: 100px 0px 70px 50px;
+}
+#sectionabout, #hello, #comment {
+    padding: 30px 0px;
+}
+#comment {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+#hello {
+    padding-left: 20px;
+    font-size: 2.5em;
+
+}
+#headshottext {
+    display: flex;
+    flex-direction: row;
+}
+#hellocomment {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 1.8em;
+}
+
+#comment a {
+    padding:10px 0px; 
+}
+.disappear{
+    display: none;
+}
+
+@media only screen and (max-width: 800px)  {
+
+    #headshot {
+            width: 300px;
+            height: 300px;
+            margin: auto; 
+
+        }
+    #hello {
+            font-size: 2em;
+        
+            }
+
+    #headshottext { 
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                   }
+                   #hellocomment {
+                       padding-top: 100px;
+                   }
+
+}
+
+
+
+#title-projects {
+    padding: 100px 0 100px 50px;
+}
+
+#projectsimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+#sectionproject {
+    display: flex;
+    flex-direction: column;
+
+}
+#projectsimg img{
+    position: relative;
+    width: auto;
+    max-height: 300px;
+    margin: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+@media only screen and (max-width: 400px){
+    #projectsimg {
+          display: flex;
+          flex-direction: column;         
+      }
+  #projectsimg img{
+    position: relative;
+    width: auto;
+    max-height: 300px;
+    margin: 10px;
+                  
+  }
+}
+#title-contact {
+    padding: 150px 0 60px 50px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background: #626262;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#626262;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #BFBFBF;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 20px 200px 40px;
+   
+}
+::placeholder  {
+    color: white;
+    font-family: 'Lora', serif;
+}
+ #sendbotton {
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+
+footer { 
+    background: url("footer.jpg");
+    width: 100%;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+}
+
+    
