@@ -20,7 +20,11 @@ h1, h2, h3 {
     padding-bottom: 50px;
 }
 
-
+@media only screen and (max-width: 600px)  {
+    h1, h2, h3 {
+        font-size: 1.3em;
+    }
+}
 .lang-container  {
     display: flex;
     flex-direction: row-reverse;
@@ -52,16 +56,19 @@ h1, h2, h3 {
 
 .blueshiba {
     max-width: 100%;
-    max-height: 600px;
+    max-height: 700px;
     position: relative;
-    margin: auto;    
+    margin: auto;
+    padding: 30px 20px 50px 20px;    
 }
 
 @media only screen and (max-width: 800px)  {
     .menu-container, .lang-container {display: none;
     }
     .blueshiba {
-        padding-top: 50px;
+        padding: 120px 20px 100px 20px;
+        max-width: auto;
+        max-height: auto;
     }           
 }
 
@@ -93,6 +100,15 @@ h1, h2, h3 {
 .about-comment #hello {
     font-size: 3.3em;
     padding: 30px 0;
+}
+
+@media only screen and (max-width: 600px)  {
+    .about-comment #hello {
+        font-size: 2.8em;
+    }
+    .about-comment p {
+        font-size: 1.3em;
+    }
 }
 @media only screen and (max-width: 800px)  {
 
@@ -206,5 +222,8 @@ footer {
 footer p {
     color: white;
 }
-
-    
+@media only screen and (max-width: 500px){
+    footer p {
+          font-size: 1em;         
+      }
+}
