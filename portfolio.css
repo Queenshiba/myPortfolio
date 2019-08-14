@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Lora', serif;
+    color: black;
+    
+}
+
+ a:hover {
+        color: gray;
+}
+
+a, p {
+    color: black;
+    font-size: 1.2em;
+}
+h1, h2, h3 {
+    font-size: 1.8em;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px)  {
+    h1, h2, h3 {
+        font-size: 1.3em;
+    }
+}
+.lang-container  {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60px;
+}
+.lang-container a {
+    padding: 1rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    text-align: right;
+}
+
+.menu-container img {
+    height: 40px;
+    width: 40px; 
+    text-align: right;
+}
+.menu-container a {
+    padding-top: 10px ;
+}
+.landingPage {
+    display: flex;
+}
+
+.blueshiba {
+    max-width: 800px;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 30px 20px 50px 20px;    
+}
+
+@media only screen and (max-width: 800px)  {
+    .menu-container, .lang-container {display: none;
+    }
+    .blueshiba {
+        padding: 200px 20px 200px 20px;
+        position: relative;
+        max-width: 500px;
+        
+    }           
+}
+@media only screen and (max-width: 400px)  {
+    .menu-container, .lang-container {display: none;
+    }
+    .blueshiba {
+        padding: 200px 20px 200px 20px;
+        position: relative;
+        max-width: 350px;
+        
+    }           
+}
+
+
+/*about-container*/
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+.about-container img {
+    width: 380px;
+    height: auto;
+  }
+
+.about-comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-comment p {
+    font-size: 1.7em;
+    padding-top: 10px;
+}
+
+.about-comment #hello {
+    font-size: 3.3em;
+    padding: 30px 0;
+}
+
+@media only screen and (max-width: 600px)  {
+    .about-comment #hello {
+        font-size: 2.8em;
+    }
+    .about-comment p {
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 800px)  {
+
+    .about-container img {
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+
+   .about-container  { 
+            display: flex;
+            flex-direction: column;                     
+        }
+
+    .about-comment {
+        text-align: center;
+    }
+                
+}
+
+/*project-container*/
+
+.projects-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+.projects-img img{
+    position: relative;
+    width: auto;
+    max-height: 300px;
+    margin: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 400px){
+    .projects-img {
+          display: flex;
+          flex-direction: column;         
+      }
+  .projects-img img{
+    position: relative;
+    width: auto;
+    max-height: 200px;
+    margin: 10px;                
+  }
+}
+
+
+/*contact-container*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  background: #626262;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#626262;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #BFBFBF;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 20px 20px 40px;
+   
+}
+::placeholder  {
+    color: white;
+    font-family: 'Lora', serif;
+}
+ #sendbotton {
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+
+footer { 
+    background: url("./img/footer.jpg");
+    width: 100%;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+}
+@media only screen and (max-width: 500px){
+    footer p {
+          font-size: 1em;         
+      }
+}
