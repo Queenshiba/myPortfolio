@@ -220,7 +220,7 @@ input[type=submit]:hover {
 
 
 footer { 
-    background: url("footer.jpg");
+    background: url("./img/footer.jpg");
     width: 100%;
     background-position: center;
     height: 400px;
