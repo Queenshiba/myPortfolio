@@ -149,26 +149,58 @@ h1, h2, h3 {
     padding-bottom: 80px;
 }
 
-.projects-img img{
-    position: relative;
-    width: auto;
-    max-height: 300px;
+.projects-img div {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 280px ;
     margin: 10px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.projects-img p {
+    background: rgb(105, 105, 105, 0.5);
+    display: flex;
+    justify-content: center;
 
-@media only screen and (max-width: 400px){
+    padding: 20px 0;
+    height: 60px;
+    color: white;
+}
+.projects-img p:hover {
+    display: none;
+}
+
+.project1 {
+    background: url(/dist/img/portfolioimage.jpg) no-repeat;
+    background-size: 300px 100%; 
+}
+.project2 {
+    /* background: url(/dist/img/portfolioimage.jpg) no-repeat; */
+    background-size: 300px 100%; 
+}
+.project3 {
+    /* background: url(/dist/img/portfolioimage.jpg) no-repeat; */
+    background-size: 300px 100%; 
+}
+.project3 p {
+    font-size: 0.7em;
+}
+.project4 {
+    /* background: url(/dist/img/portfolioimage.jpg) no-repeat; */
+    background-size: 300px 100%; 
+}
+
+/* @media only screen and (max-width: 400px){
     .projects-img {
           display: flex;
-          flex-direction: column;         
+          flex-wrap: wrap;       
       }
   .projects-img img{
     position: relative;
-    width: auto;
-    max-height: 200px;
+    height: 300px;
     margin: 10px;                
   }
-}
+} */
 
 
 /*contact-container*/
