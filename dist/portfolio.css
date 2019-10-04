@@ -14,15 +14,23 @@ a, p {
     color: black;
     font-size: 1.2em;
 }
-h1, h2, h3 {
+h1 {
     font-size: 1.8em;
     padding-left: 30px;
     padding-bottom: 50px;
 }
+h2 {
+    font-size: 1.2em;
+    padding-left: 40px; 
+}
 
 @media only screen and (max-width: 600px)  {
-    h1, h2, h3 {
+    h1 {
         font-size: 1.3em;
+    }
+    h2 {
+        font-size: 0.8em;
+        padding-left: 30px; 
     }
 }
 .lang-container  {
@@ -52,6 +60,7 @@ h1, h2, h3 {
 }
 .landingPage {
     display: flex;
+    height: 90vh;
 }
 
 .blueshiba {
@@ -152,42 +161,43 @@ h1, h2, h3 {
 .projects-img div {
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 280px ;
+    height: 200px;
+    width: 200px ;
     margin: 10px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.projects-img p {
-    background: rgb(105, 105, 105, 0.5);
+/* .projects-img > div:hover {
+    background: rgba(255, 255, 255, 0.20);
     display: flex;
     justify-content: center;
+    height: 200px;
+    color: black;
+} */
 
-    padding: 20px 0;
-    height: 60px;
-    color: white;
-}
-.projects-img p:hover {
-    display: none;
-}
+
 
 .project1 {
-    background: url(/dist/img/portfolioimage.jpg) no-repeat;
-    background-size: 300px 100%; 
+    background: url(./img/projectmyportfolio.jpg) no-repeat;
+    background-size: 200px 100%;
+    display: flex; 
+    justify-content: center;
+    align-content: center;
 }
 .project2 {
-    /* background: url(/dist/img/portfolioimage.jpg) no-repeat; */
-    background-size: 300px 100%; 
+    background: url(./img/projecttokensha.jpg) no-repeat;
+    background-size: 200px 100%; 
 }
 .project3 {
-    /* background: url(/dist/img/portfolioimage.jpg) no-repeat; */
-    background-size: 300px 100%; 
+    background: url(./img/projectfutaba.jpg) no-repeat;
+    background-size: 200px 100%; 
 }
 .project3 p {
     font-size: 0.7em;
+    margin: auto 0;
 }
 .project4 {
-    /* background: url(/dist/img/portfolioimage.jpg) no-repeat; */
-    background-size: 300px 100%; 
+    background: url(./img/projectharukanails.jpg) no-repeat;
+    background-size: 200px 100%; 
 }
 
 /* @media only screen and (max-width: 400px){
