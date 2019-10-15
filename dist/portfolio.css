@@ -199,7 +199,10 @@ h2 {
     background: url(./img/projectharukanails.jpg) no-repeat;
     background-size: 200px 100%; 
 }
-
+.projectC {
+    background: url(./img/FutabaBusinessCard\ for\ project.png) no-repeat;
+    background-size: 200px 100%; 
+}
 /* @media only screen and (max-width: 400px){
     .projects-img {
           display: flex;
