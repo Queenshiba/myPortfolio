@@ -219,11 +219,23 @@ h2 {
     background: url(./img/matchinggame.png) no-repeat;
     background-size: 200px 100%; 
 }
+
+.project-github {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+}
+.project-github a{
+padding-left: 1%;
+}
+
+/* contact */
 .button-email {
-    height: 300px;
+    height: 100px;
     display: flex;
     justify-content: center;
-    line-height: 300px;
+    line-height: 100px;
 
 }
 button {
@@ -235,11 +247,11 @@ button {
 }
 
 button:hover {
-    background: transparent;
-    border: 2px solid #153372;
+    background:  #153372;
+    color: white;
     height: 50px;
     width: 200px;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 
 
@@ -255,15 +267,17 @@ footer {
     background: url("./img/footer.jpg");
     width: 100%;
     background-position: center;
-    height: 400px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;  
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
 }
 footer p {
     color: white;
+    background-color: rgba(55, 81, 155, 0.2);
 }
 @media only screen and (max-width: 500px){
     footer p {
