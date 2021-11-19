@@ -70,12 +70,25 @@ h2 {
     height: 90vh;
 }
 
-.blueshiba {
-    max-width: 780px;
-    max-height: auto;
-    position: relative;
-    margin: auto;
-    padding: 80px 20px 50px 20px;
+#lp-left {
+    background-color: #153372;
+    width: 50%;
+
+    /* height: 100%; */
+}
+
+#lp-right {
+    /* background-color: antiquewhite; */
+    /* background: url(./img/harukaimg2.png) no-repeat; */
+    /* background-size: auto 70%; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lp-right img {
+    height: 50%;
 }
 
 .menu-container img:hover {
