@@ -73,8 +73,11 @@ h2 {
 #lp-left {
     background-color: #153372;
     width: 50%;
-
-    /* height: 100%; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #lp-right {
@@ -126,33 +129,15 @@ h2 {
 
 /*about-container*/
 
-.about-container {
+#about-whatIdo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 80px;
+    background-color: wheat;
+    height: 400px;
 }
 
-.about-container img {
-    width: 380px;
-    height: auto;
-}
 
-.about-comment {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-comment p {
-    font-size: 1.7em;
-    padding-top: 10px;
-}
-
-.about-comment #hello {
-    font-size: 3.3em;
-    padding: 30px 0;
-}
 
 @media only screen and (max-width: 600px) {
     .about-comment #hello {
