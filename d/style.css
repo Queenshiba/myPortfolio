@@ -67,7 +67,7 @@ h2 {
 
 .landingPage {
     display: flex;
-    height: 90vh;
+    height: 60vh;
 }
 
 #lp-left {
@@ -93,7 +93,9 @@ h2 {
 #lp-right img {
     height: 50%;
 }
-
+#lp-left img {
+    height: 50%;
+}
 .menu-container img:hover {
     cursor: pointer;
     transform: scale(1.2);
@@ -134,7 +136,7 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     background-color: wheat;
-    height: 400px;
+    height: 60vh;
 }
 
 
