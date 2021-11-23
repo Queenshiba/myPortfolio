@@ -172,89 +172,23 @@ h2 {
 
 /*project-container*/
 
-.projects-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 80px;
-}
-
-.projects-img div {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
-    transition: transform 0.25s ease;
-    cursor: zoom-in;
-    height: 200px;
-    width: 200px;
-    margin: 20px;
-}
-
-.projects-img img {
-    height: 200px;
-    width: 200px;
-}
-
-.projects-img div:hover {
-    box-shadow: 0 8px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.project1 {
-    background: url(./img/projectmyportfolio.jpg) no-repeat;
-    background-size: 200px 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.project2 {
-    background: url(./img/token-sha.jpg) no-repeat;
-    background-size: 200px 100%;
-}
-
-.project3 {
-    background: url(./img/projectfutaba.jpg) no-repeat;
-    background-size: 200px 100%;
-}
-
-.project3 p {
-    font-size: 0.7em;
-    margin: auto 0;
-}
-
-.project4 {
-    /* background: url(./img/projectharukanails.jpg) no-repeat;
-    background-size: 200px 100%;  */
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.app1 {
-    background: url(./img/golfscorecounter.png) no-repeat;
-    background-size: 200px 100%;
-}
-
-.app2 {
-    background: url(./img/matchinggame.png) no-repeat;
-    background-size: 200px 100%;
-}
-
-.project-github {
+#about-myprojects {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 100px;
+    justify-content: space-around;
+    background-color: wheat;
+    height: 60vh;
 }
 
-.project-github a {
-    padding-left: 1%;
-}
 
 /* contact */
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: wheat;
+    height: 60vh;
+}
 .button-email {
     height: 100px;
     display: flex;
