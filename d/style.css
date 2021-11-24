@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Lora', serif;
     color: black;
-
+    /* background-color: #153372; */
 }
 
 a:hover {
@@ -65,37 +65,44 @@ h2 {
     padding-top: 10px;
 }
 
-.landingPage {
-    display: flex;
-    height: 60vh;
+.topwaves {
+    position: absolute;
+    z-index: 0;
 }
 
-#lp-left {
-    background-color: #153372;
+
+/* landing page */
+.landingPage {
+    display: flex;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+
+.landingPage .lp-left {
     width: 50%;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#lp-right {
-    /* background-color: antiquewhite; */
-    /* background: url(./img/harukaimg2.png) no-repeat; */
-    /* background-size: auto 70%; */
+.landingPage .lp-right {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#lp-right img {
+.lp-right img {
     height: 50%;
 }
-#lp-left img {
+
+.lp-left img {
     height: 50%;
 }
+
 .menu-container img:hover {
     cursor: pointer;
     transform: scale(1.2);
@@ -138,8 +145,31 @@ h2 {
     background-color: wheat;
     height: 60vh;
 }
+.title-wrap {
+    border-left:8px solid black;
+    margin-top: 10%;
+}
+#about-whatIdo .lp-left {
+    
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-
+#about-whatIdo .lp-right {
+    background: url(./img/gray-circle2.svg) no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    color: gray;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
 
 @media only screen and (max-width: 600px) {
     .about-comment #hello {
@@ -176,18 +206,59 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: wheat;
+    /* background-color: wheat; */
     height: 60vh;
 }
 
+#about-myprojects .lp-left {
+    background: url(./img/gray-circle1.svg) no-repeat;
+    background-size: auto 100%;
+    background-position: left;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#about-myprojects .title-wrap {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#about-myprojects .lp-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* contact */
 #contact-me {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: wheat;
     height: 60vh;
+    width: 100%;
+
+}
+#contact-me .lp-left {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-me .lp-right {
+    background: url(./img/gray-circle3.svg) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button-email {
     height: 100px;
@@ -218,28 +289,29 @@ button:hover {
 
 
 /*contact-container*/
-
-
-
+.topwaves-footer {
+    display: block;
+}
 
 footer {
-
+background-color: #595959;
     width: 100%;
     background-position: center;
     height: 200px;
-    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 20px;
+    align-items: center;
 }
 
 footer p {
     color: white;
-    background-color: rgba(55, 81, 155, 0.2);
 }
-
+footer a {
+    color: #595959;
+    
+}
 @media only screen and (max-width: 500px) {
     footer p {
         font-size: 1em;
