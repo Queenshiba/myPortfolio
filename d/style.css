@@ -152,21 +152,21 @@ h2 {
     border-left:8px solid black;
     margin-top: 10%;
 }
-#about-whatIdo .lp-left {
+#about-whatIdo .lp-right {
     position: relative;
     width: 50%;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
 }
 
-#about-whatIdo .lp-right {
+#about-whatIdo .lp-left {
     background: url(./img/gray-circle2.svg) no-repeat;
     background-size: contain;
     background-position: right;
-    
+
     color: gray;
     width: 50%;
     display: flex;
@@ -233,8 +233,8 @@ h2 {
 #about-myprojects .lp-right {
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
 }
 
 /* contact */
