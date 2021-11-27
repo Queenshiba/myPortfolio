@@ -246,14 +246,14 @@ h2 {
     width: 100%;
 
 }
-#contact-me .lp-left {
+/* #contact-me .lp-left {
     width: 50%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #contact-me .lp-right {
     background: url(./img/gray-circle3.svg) no-repeat;
@@ -274,14 +274,15 @@ h2 {
 
 button {
     background: transparent;
-    border: 2px solid #153372;
+    border: 2px solid #595959;
     height: 50px;
     width: 200px;
-
+    background: white;
 }
 
 button:hover {
-    background: #153372;
+    background: #595959;
+    border: 2px solid white;
     color: white;
     height: 50px;
     width: 200px;
