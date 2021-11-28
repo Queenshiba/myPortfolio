@@ -1,81 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lora', serif;
+    font-family: 'Outfit', sans-serif;
     color: black;
-    /* background-color: #153372; */
-}
-
-a:hover {
-    color: gray;
-}
-
-a, p {
-    color: black;
-    font-size: 1.2em;
-}
-
-h1 {
-    font-size: 1.8em;
-    padding-left: 30px;
-    padding-bottom: 50px;
-}
-
-h2 {
-    font-size: 1.2em;
-    padding-left: 40px;
-}
-
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.3em;
-    }
-
-    h2 {
-        font-size: 0.8em;
-        padding-left: 30px;
-    }
-}
-
-.lang-container {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 60px;
-}
-
-.lang-container a {
-    padding: 1rem;
-}
-
-.menu-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100px;
-    text-align: right;
-}
-
-.menu-container img {
-    height: 40px;
-    width: 40px;
-    text-align: right;
-}
-
-.menu-container a {
-    padding-top: 10px;
-}
-
-.topwaves {
-    position: absolute;
 }
 
 
 /* landing page */
+
 .landingPage {
     display: flex;
-    height: 80vh;
+    height: 60vh;
     position: relative;
-    z-index: 1;
+    padding-bottom: 10em;
+}
+
+.lp-left>h1,
+h2,
+h3 {
+    margin: 0;
 }
 
 .landingPage .lp-left {
@@ -92,51 +36,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .lp-right img {
-    max-width: 50%; 
-    display: block; 
+    max-width: 80%;
+    display: block;
     height: auto;
-}
-
-.lp-left img {
-    max-width: 100%; 
-    display: block; 
-    height: auto;
-}
-
-.menu-container img:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-
-}
-
-@media only screen and (max-width: 800px) {
-    .menu-container, .lang-container {
-        display: none;
-    }
-
-    .blueshiba {
-        padding: 200px 20px 200px 20px;
-        position: relative;
-        max-width: 500px;
-
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .menu-container, .lang-container {
-        display: none;
-    }
-
-    .blueshiba {
-        padding: 200px 20px 200px 20px;
-        position: relative;
-        max-width: 350px;
-
-    }
 }
 
 
@@ -146,15 +51,24 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 60vh;
+    height: max-content;
+    padding-bottom: 10em;
 }
+
 .title-wrap {
-    border-left:8px solid black;
-    margin-top: 10%;
+    border-left: 8px solid black;
+    margin: none;
 }
+
+.title-wrap h3,
+p {
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+}
+
 #about-whatIdo .lp-right {
     position: relative;
-    width: 50%;
+    width: 70%;
     color: black;
     display: flex;
     flex-direction: column;
@@ -164,88 +78,98 @@ h2 {
 
 #about-whatIdo .lp-left {
     background: url(./img/gray-circle2.svg) no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: auto 100%;
     background-position: right;
-
     color: gray;
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+}
+
+.design-wrap li {
+    padding-left: 1.5em;
+}
+
+.design-wrap h3 {
+    padding: 1.5em 0;
+    padding-left: 1em;
 }
 
 @media only screen and (max-width: 600px) {
     .about-comment #hello {
         font-size: 2.8em;
     }
-
     .about-comment p {
         font-size: 1.3em;
     }
 }
 
 @media only screen and (max-width: 800px) {
-
     .about-container img {
         width: 300px;
         height: 300px;
         margin: auto;
     }
-
     .about-container {
         display: flex;
         flex-direction: column;
     }
-
     .about-comment {
         text-align: center;
     }
-
 }
 
-/*project-container*/
 
-#about-myprojects {
+/*about-mybusiness-container*/
+
+#about-mybusiness {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* background-color: wheat; */
-    height: 60vh;
+    height: 600px;
 }
 
-#about-myprojects .lp-left {
+#about-mybusiness .lp-right {
     background: url(./img/gray-circle1.svg) no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: auto 100%;
     background-position: left;
-    width: 50%;
+    width: 30%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
-#about-myprojects .title-wrap {
+
+#about-mybusiness .title-wrap {
     margin-top: 10%;
     margin-left: 10%;
 }
 
-#about-myprojects .lp-right {
-    width: 50%;
+#about-mybusiness .lp-left {
+    width: 70%;
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+    /* background-color: yellow; */
 }
 
+
 /* contact */
+
 #contact-me {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 60vh;
     width: 100%;
-
 }
+
+
 /* #contact-me .lp-left {
     width: 50%;
     color: white;
@@ -264,23 +188,20 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 .button-email {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    line-height: 100px;
-
-}
-
-button {
-    background: transparent;
-    border: 2px solid #595959;
     height: 50px;
     width: 200px;
     background: white;
+    border: 2px solid #595959;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
-button:hover {
+.button-email:hover {
     background: #595959;
     border: 2px solid white;
     color: white;
@@ -290,16 +211,14 @@ button:hover {
 }
 
 
-
-
-
 /*contact-container*/
+
 .topwaves-footer {
     display: block;
 }
 
 footer {
-background-color: #595959;
+    background-color: #595959;
     width: 100%;
     background-position: center;
     height: 200px;
@@ -313,10 +232,11 @@ background-color: #595959;
 footer p {
     color: white;
 }
+
 footer a {
     color: #595959;
-    
 }
+
 @media only screen and (max-width: 500px) {
     footer p {
         font-size: 1em;

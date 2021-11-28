@@ -12,55 +12,48 @@
 </head>
 
 <body>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div>
+    <div class="menu">
+        <nav class="menu__nav">
+            <ul class="menu__list r-list">
+                <li class="menu__group">
+                    <a href="#top" class="menu__link r-link">Top</a>
+                </li>
+                <li class="menu__group">
+                    <a href="#about-whatIdo" class="menu__link r-link">Service</a>
+                </li>
+                <li class="menu__group">
+                    <a href="#about-mybusiness" class="menu__link r-link">My Business</a>
+                </li>
 
-            </div>
-        </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                    <div class="sns-icons">
-                        <a href="https://github.com/Queenshiba" target="_blank"><img
-                                src="./img/github_circle_gray_.png"></a>
-                        <a href="https://www.instagram.com/queeenshiba/" target="_blank"><img
-                                src="./img/insta-icon-gray.png"></a>
-                        <a href="https://twitter.com/QueeenShiba" target="_blank"><img
-                                src="./img/twitter-icon-gray.png"></a>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
+                <li class="menu__group">
+                    <a href="#contact-me" class="menu__link r-link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="menu__toggle r-button" type="button">
+            <span class="menu__hamburger m-hamburger">
+                <span class="m-hamburger__label">
+                    <span class="menu__toggle-hint screen-reader">Open menu</span>
+                </span>
+            </span>
+        </button>
     </div>
+
+
+
+
     <div class="topwaves-padding"></div>
     <svg class="topwaves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#595959" fill-opacity="1"
             d="M0,256L30,256C60,256,120,256,180,261.3C240,267,300,277,360,277.3C420,277,480,267,540,224C600,181,660,107,720,90.7C780,75,840,117,900,128C960,139,1020,117,1080,96C1140,75,1200,53,1260,80C1320,107,1380,181,1410,218.7L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
         </path>
     </svg>
+    <div class="landingPage" 　id="top">
 
-
-    <div class="landingPage">
-        <!-- <div class="menu-container">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="https://github.com/Queenshiba" target="_blank"><img src="./img/github_circle_gray_.png"></a>
-            <a href="https://www.instagram.com/queeenshiba/" target="_blank"><img src="./img/insta-icon-gray.png"></a>
-            <a href="https://twitter.com/QueeenShiba" target="_blank"><img src="./img/twitter-icon-gray.png"></a>
-
-        </div> -->
         <div class="lp-left">
-            <h2>Hello,</h2>
-            <h2>My name is</h2>
-            <h1>Haruka Shibata.</h1>
+            <h1>Hello,</h1>
+            <h3>My name is</h3>
+            <h2>Haruka Shibata.</h2>
         </div>
         <div class="lp-right">
             <img class="harukaimg" src="img/harukaimg2.png">
@@ -77,37 +70,65 @@
         </div>
         <div class="lp-right">
             <div class="title-wrap">
-                <h2>What I do</h2>
-                <h2>サービス内容</h2>
+                <h3>Service</h3>
+                <p>サービス内容</p>
             </div>
-            <p>Shibata Haruka.</p>
+            <div class="service-wrap">
+                <div class="design-wrap">
+                    <h3>デザイン関連/Design</h3>
+                    <li>名刺 / Business Cards</li>
+                    <li>ロゴ / Logo</li>
+                    <li>封筒 / Envelop</li>
+                    <li>パンフレット / Brochure</li>
+                    <li>飲食店・美容院メニュー / Store Menu</li>
+                    <li>チラシ・広告 / Flyer</li>
+                    <li>ウェブサイト / Website</li>
+                    <h3>その他</h3>
+                    <li>既存ロゴのデジタル化 / Turn a hand-drawn sketch into a digital logo</li>
+                    <li>古いホームページの再編 / Update websites</li>
+                    <li>ウェブマーケティング / Web Marketing</li>
+                </div>
+
+            </div>
         </div>
 
     </div>
 
     <!--projects-->
 
-    <div id="about-myprojects">
-        <div class="lp-right">
-            <div class="title-wrap">
-                <h2>My Business </h2>
-                <h2>事業</h2>
-            </div>
-            <!-- <img class="harukaimg" src="img/Work_at_home1.png"> -->
-        </div>
+    <div id="about-mybusiness">
+
         <div class="lp-left">
+            <div class="title-wrap">
+                <h3>My Business </h3>
+                <p>事業</p>
+            </div>
+            <div class="mybusiness-wrap">
+                <div class="business-wrap">
+                    <h3>KATEKYO</h3>
+                    <a href="https://katekyo-shiba.netlify.app/">website</a>
+                </div>
+                <div class="business-wrap">
+                    <h3>Haruka Nails</h3>
+                    <a href="https://www.instagram.com/harukanails_qshiba/">instagram</Ins></a>
+                </div>
+
+
+            </div>
 
         </div>
+        <div class="lp-right">
 
+        </div>
     </div>
 
     <!--contact-->
     <div id="contact-me">
 
         <div class="lp-right">
-            <div class="button-email">
-                <a href="mailto:s8f.haruka@gmail.com" target="_top"><button>Email Me</button></a>
-            </div>
+
+            <a class="button-email" href="mailto:qshiba.design.webdev@gmail.com" target="_top">Email Me</a>
+
         </div>
 
 
@@ -122,7 +143,7 @@
 
     <footer>
         <p>© 2021 Haruka Shibata All Rights Reserved</p>
-       
+
     </footer>
     <script src="main.js"></script>
 </body>
