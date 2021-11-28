@@ -44,6 +44,20 @@ h3 {
     height: auto;
 }
 
+@media only screen and (max-width: 500px) {
+    .landingPage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .landingPage .lp-left {
+        width: 100%;
+    }
+    .lp-right img {
+        max-width: 100%;
+    }
+}
+
 
 /*about-container*/
 
@@ -81,7 +95,6 @@ p {
     /* background-size: contain; */
     background-size: auto 100%;
     background-position: right;
-    color: gray;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -98,27 +111,10 @@ p {
     padding-left: 1em;
 }
 
-@media only screen and (max-width: 600px) {
-    .about-comment #hello {
-        font-size: 2.8em;
-    }
-    .about-comment p {
-        font-size: 1.3em;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .about-container img {
-        width: 300px;
-        height: 300px;
-        margin: auto;
-    }
-    .about-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-comment {
-        text-align: center;
+@media only screen and (max-width: 500px) {
+    #about-whatIdo .lp-left {
+        background-size: auto 100%;
+        background-position: right;
     }
 }
 
@@ -158,6 +154,24 @@ p {
     /* background-color: yellow; */
 }
 
+.mybusiness-wrap {
+    margin-left: 15%;
+    width: 100%;
+}
+
+.business-wrap a {
+    padding: 0.5em 0;
+}
+
+.business-wrap p {
+    padding: 0.5em 0;
+}
+
+.business-wrap h3 {
+    padding: 0.5em 0;
+    padding-top: 2em;
+}
+
 
 /* contact */
 
@@ -168,16 +182,6 @@ p {
     height: 60vh;
     width: 100%;
 }
-
-
-/* #contact-me .lp-left {
-    width: 50%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 #contact-me .lp-right {
     background: url(./img/gray-circle3.svg) no-repeat;
