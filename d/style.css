@@ -1,11 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
     color: black;
+
 }
 
+h1 {
+    font-size: 4rem;
+    /* padding-bottom: 40px; */
+}
+
+h2 {
+    font-size: 3rem;
+    /* padding-bottom: 40px; */
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, li, a {
+    font-size: 1.5rem;
+}
 
 /* landing page */
 
@@ -14,13 +33,10 @@ body {
     height: 60vh;
     position: relative;
     padding-bottom: 10em;
+
 }
 
-.lp-left>h1,
-h2,
-h3 {
-    margin: 0;
-}
+
 
 .landingPage .lp-left {
     width: 50%;
@@ -49,13 +65,38 @@ h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 3em;
     }
+
     .landingPage .lp-left {
         width: 100%;
     }
+
     .lp-right img {
         max-width: 100%;
     }
+    .lp-left>h1,
+h2,
+h3 {
+    margin: 0;
+}
+h1 {
+    font-size: 3rem;
+    /* padding-bottom: 40px; */
+}
+
+h2 {
+    font-size: 2rem;
+    /* padding-bottom: 40px; */
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p, li, a {
+    font-size: 1rem;
+}
 }
 
 
@@ -65,8 +106,8 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: max-content;
-    padding-bottom: 10em;
+    height: 80vh;
+    padding: 10em 0;
 }
 
 .title-wrap {
@@ -82,12 +123,13 @@ p {
 
 #about-whatIdo .lp-right {
     position: relative;
-    width: 70%;
+    width: 60%;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+    padding-left: 10%;
 }
 
 #about-whatIdo .lp-left {
@@ -95,7 +137,7 @@ p {
     /* background-size: contain; */
     background-size: auto 100%;
     background-position: right;
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -112,9 +154,15 @@ p {
 }
 
 @media only screen and (max-width: 500px) {
+    #about-whatIdo {
+        padding: 5em 0;
+    }
+    #about-whatIdo .lp-right {
+        padding-left: 0;
+        width: 80%;
+    }
     #about-whatIdo .lp-left {
-        background-size: auto 100%;
-        background-position: right;
+        width: 20%;
     }
 }
 
@@ -124,7 +172,7 @@ p {
 #about-mybusiness {
     display: flex;
     flex-direction: row;
-    height: 600px;
+    height: 80vh;
 }
 
 #about-mybusiness .lp-right {
@@ -161,6 +209,16 @@ p {
 
 .business-wrap a {
     padding: 0.5em 0;
+    background-color: #16357cd5;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+}
+
+.business-wrap a:hover {
+    background-color: white;
+    color: #16357cd5;
+    border: 2px solid #16357cd5;
 }
 
 .business-wrap p {
@@ -213,7 +271,11 @@ p {
     width: 200px;
     /* transform: scale(1.2); */
 }
-
+@media only screen and (max-width: 500px) {
+    #contact-me .lp-right {
+        width: 90%;
+    }
+}
 
 /*contact-container*/
 
