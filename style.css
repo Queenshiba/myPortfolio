@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    color: black;
+
+}
+
+h1 {
+    font-size: 4rem;
+    /* padding-bottom: 40px; */
+}
+
+h2 {
+    font-size: 3rem;
+    /* padding-bottom: 40px; */
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, li, a {
+    font-size: 1.5rem;
+}
+
+/* landing page */
+
+.landingPage {
+    display: flex;
+    height: 60vh;
+    position: relative;
+    padding-bottom: 10em;
+
+}
+
+
+
+.landingPage .lp-left {
+    width: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingPage .lp-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lp-right img {
+    max-width: 80%;
+    display: block;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .landingPage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3em;
+    }
+
+    .landingPage .lp-left {
+        width: 100%;
+    }
+
+    .lp-right img {
+        max-width: 100%;
+    }
+    .lp-left>h1,
+h2,
+h3 {
+    margin: 0;
+}
+h1 {
+    font-size: 3rem;
+    /* padding-bottom: 40px; */
+}
+
+h2 {
+    font-size: 2rem;
+    /* padding-bottom: 40px; */
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p, li, a {
+    font-size: 1rem;
+}
+}
+
+
+/*about-container*/
+
+#about-whatIdo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 10em 0;
+}
+
+.title-wrap {
+    border-left: 8px solid black;
+    margin: none;
+}
+
+.title-wrap h3,
+p {
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+}
+
+#about-whatIdo .lp-right {
+    position: relative;
+    width: 60%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+#about-whatIdo .lp-left {
+    background: url(./img/gray-circle2.svg) no-repeat;
+    /* background-size: contain; */
+    background-size: auto 100%;
+    background-position: right;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.design-wrap li {
+    padding-left: 1.5em;
+}
+
+.design-wrap h3 {
+    padding: 1.5em 0;
+    padding-left: 1em;
+}
+
+@media only screen and (max-width: 500px) {
+    #about-whatIdo {
+        padding: 5em 0;
+    }
+    #about-whatIdo .lp-right {
+        padding-left: 0;
+        width: 80%;
+    }
+    #about-whatIdo .lp-left {
+        width: 20%;
+    }
+}
+
+
+/*about-mybusiness-container*/
+
+#about-mybusiness {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+#about-mybusiness .lp-right {
+    background: url(./img/gray-circle1.svg) no-repeat;
+    /* background-size: contain; */
+    background-size: auto 100%;
+    background-position: left;
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#about-mybusiness .title-wrap {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#about-mybusiness .lp-left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    /* background-color: yellow; */
+}
+
+.mybusiness-wrap {
+    margin-left: 15%;
+    width: 100%;
+}
+
+.business-wrap a {
+    padding: 0.5em 0;
+    background-color: #16357cd5;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+}
+
+.business-wrap a:hover {
+    background-color: white;
+    color: #16357cd5;
+    border: 2px solid #16357cd5;
+}
+
+.business-wrap p {
+    padding: 0.5em 0;
+}
+
+.business-wrap h3 {
+    padding: 0.5em 0;
+    padding-top: 2em;
+}
+
+
+/* contact */
+
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60vh;
+    width: 100%;
+}
+
+#contact-me .lp-right {
+    background: url(./img/gray-circle3.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-email {
+    height: 50px;
+    width: 200px;
+    background: white;
+    border: 2px solid #595959;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.button-email:hover {
+    background: #595959;
+    border: 2px solid white;
+    color: white;
+    height: 50px;
+    width: 200px;
+    /* transform: scale(1.2); */
+}
+@media only screen and (max-width: 500px) {
+    #contact-me .lp-right {
+        width: 90%;
+    }
+}
+
+/*contact-container*/
+
+.topwaves-footer {
+    display: block;
+}
+
+footer {
+    background-color: #595959;
+    width: 100%;
+    background-position: center;
+    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: #595959;
+}
+
+@media only screen and (max-width: 500px) {
+    footer p {
+        font-size: 1em;
+    }
+}
