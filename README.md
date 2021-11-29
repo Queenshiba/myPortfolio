@@ -3,18 +3,17 @@
 ## What is it for?
 - Displaying who I am, What I can do and contacting me
 
-## How does it look like?
-
-![](https://media.giphy.com/media/XH3l2Ybr6wjrXV8cYQ/giphy.gif)
-
 ## Technologies
 - HTML
 - CSS
+- javaScript
 
 ## Build status
 - Completed
 - Hosts [harukashibata.com](harukashibata.com)
 
-## Reference
-- [Pure CSS Hamburger Menu & Overlay](https://www.youtube.com/watch?v=DZg6UfS5zYg)
-    - A YouTube tutorial by Traversy Media 
+## How does it look like?
+
+![img](screencapture-harukashibata-2021-11-29-14_42_46.png)
+
+
