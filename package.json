@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Queenshiba/myPortfolio.git",
   "dependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^5.0.0"
   },
   "description": "- Displaying who I am, What I can do and contacting me"
 }
